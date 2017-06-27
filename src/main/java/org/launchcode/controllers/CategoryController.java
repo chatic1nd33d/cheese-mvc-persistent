@@ -45,6 +45,8 @@ public class CategoryController {
 
         if(errors.hasErrors()){
             model.addAttribute(errors);
+            model.addAttribute(category);
+            model.addAttribute("title", "Add Category");
             return "category/add";
         }
 
